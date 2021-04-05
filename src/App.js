@@ -11,9 +11,14 @@ function App() {
     <Typography
     component="h1"
     variant="h3">Formulario de Cadastro</Typography>
-    <FormularioCadastro/>
+    <FormularioCadastro
+    aoEnviar={aoEnviarForm}/>
     </Container>
   );
 }
 
 export default App;
+
+function aoEnviarForm(dados) {
+  console.log(dados);
+}
