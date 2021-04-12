@@ -3,7 +3,7 @@ import React from 'react';
 
 function DadosEndereco() {
     return (
-        <form>
+        <form onSubmit={ (e) => e.preventDefault()}>
             <TextField
                 id="endereço"
                 label="Endereço"

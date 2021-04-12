@@ -3,14 +3,15 @@ import React from 'react';
 
 function DadosUsuario() {
     return (
-        <form>
+        <form onSubmit={ (e) => e.preventDefault()}>
             <TextField
                 id="email"
                 label="email"
                 type="email"
                 variant="outlined"
                 margin="normal"
-                fullWidth />
+                fullWidth 
+                required/>
 
             <TextField
                 id="senha"
@@ -18,7 +19,8 @@ function DadosUsuario() {
                 type="password"
                 variant="outlined"
                 margin="normal"
-                fullWidth />
+                fullWidth 
+                required/>
 
             <Button
                 type="submit"
